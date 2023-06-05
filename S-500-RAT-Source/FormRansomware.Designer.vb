@@ -1,0 +1,703 @@
+﻿Namespace S500RAT
+	' Token: 0x02000027 RID: 39
+	<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
+	Public Partial Class FormRansomware
+		Inherits Global.System.Windows.Forms.Form
+
+		' Token: 0x060006F0 RID: 1776 RVA: 0x0003A750 File Offset: 0x00038950
+		<Global.System.Diagnostics.DebuggerNonUserCode()>
+		Protected Overrides Sub Dispose(disposing As Boolean)
+			Try
+				Dim flag As Boolean = disposing AndAlso Me.components IsNot Nothing
+				If flag Then
+					Me.components.Dispose()
+				End If
+			Finally
+				MyBase.Dispose(disposing)
+			End Try
+		End Sub
+
+		' Token: 0x060006F1 RID: 1777 RVA: 0x0003A7A0 File Offset: 0x000389A0
+		<Global.System.Diagnostics.DebuggerStepThrough()>
+		Private Sub InitializeComponent()
+			Me.components = New Global.System.ComponentModel.Container()
+			Dim componentResourceManager As Global.System.ComponentModel.ComponentResourceManager = New Global.System.ComponentModel.ComponentResourceManager(GetType(Global.S500RAT.FormRansomware))
+			Dim dataGridViewCellStyle As Global.System.Windows.Forms.DataGridViewCellStyle = New Global.System.Windows.Forms.DataGridViewCellStyle()
+			Dim dataGridViewCellStyle2 As Global.System.Windows.Forms.DataGridViewCellStyle = New Global.System.Windows.Forms.DataGridViewCellStyle()
+			Dim dataGridViewCellStyle3 As Global.System.Windows.Forms.DataGridViewCellStyle = New Global.System.Windows.Forms.DataGridViewCellStyle()
+			Dim dataGridViewCellStyle4 As Global.System.Windows.Forms.DataGridViewCellStyle = New Global.System.Windows.Forms.DataGridViewCellStyle()
+			Dim dataGridViewCellStyle5 As Global.System.Windows.Forms.DataGridViewCellStyle = New Global.System.Windows.Forms.DataGridViewCellStyle()
+			Dim dataGridViewCellStyle6 As Global.System.Windows.Forms.DataGridViewCellStyle = New Global.System.Windows.Forms.DataGridViewCellStyle()
+			Me.Timer1 = New Global.System.Windows.Forms.Timer(Me.components)
+			Me.NameForm = New Global.Sunny.UI.UILabel()
+			Me.ClientInfo = New Global.System.Windows.Forms.Label()
+			Me.State = New Global.System.Windows.Forms.Label()
+			Me.Crypt = New Global.Guna.UI2.WinForms.Guna2GradientButton()
+			Me.Decrypt = New Global.Guna.UI2.WinForms.Guna2GradientButton()
+			Me.ImageListLogs = New Global.System.Windows.Forms.ImageList(Me.components)
+			Me.Guna2Elipse1 = New Global.Guna.UI2.WinForms.Guna2Elipse(Me.components)
+			Me.EncryptLogs = New Global.Guna.UI2.WinForms.Guna2DataGridView()
+			Me.Column3 = New Global.System.Windows.Forms.DataGridViewImageColumn()
+			Me.Column4 = New Global.System.Windows.Forms.DataGridViewTextBoxColumn()
+			Me.Column5 = New Global.System.Windows.Forms.DataGridViewTextBoxColumn()
+			Me.Column6 = New Global.System.Windows.Forms.DataGridViewTextBoxColumn()
+			Me.Column7 = New Global.System.Windows.Forms.DataGridViewTextBoxColumn()
+			Me.Encryptionkey = New Global.Guna.UI2.WinForms.Guna2TextBox()
+			Me.PictureBox_Background = New Global.System.Windows.Forms.PictureBox()
+			Me.Chose_Backgroundimage = New Global.Guna.UI2.WinForms.Guna2GradientButton()
+			Me.Label22 = New Global.System.Windows.Forms.Label()
+			Me.EnableBackground = New Global.Guna.UI2.WinForms.Guna2ToggleSwitch()
+			Me.StateFiles = New Global.Guna.UI2.WinForms.Guna2HtmlLabel()
+			Me.NumList = New Global.Guna.UI2.WinForms.Guna2HtmlLabel()
+			Me.TextBox1 = New Global.Guna.UI2.WinForms.Guna2TextBox()
+			Me.label4 = New Global.Guna.UI2.WinForms.Guna2HtmlLabel()
+			Me.Label1 = New Global.System.Windows.Forms.Label()
+			Me.EnableTextDocument = New Global.Guna.UI2.WinForms.Guna2ToggleSwitch()
+			Me.Choose_Text = New Global.Guna.UI2.WinForms.Guna2GradientButton()
+			Me.DocumentPath = New Global.Guna.UI2.WinForms.Guna2HtmlLabel()
+			Me.Guna2ResizeBox1 = New Global.Guna.UI2.WinForms.Guna2ResizeBox()
+			Me.FileEncrypError = New Global.System.Windows.Forms.LinkLabel()
+			Me.Timer2 = New Global.System.Windows.Forms.Timer(Me.components)
+			Me.GetDriversComboBox = New Global.Guna.UI2.WinForms.Guna2ComboBox()
+			Me.Guna2HtmlLabel1 = New Global.Guna.UI2.WinForms.Guna2HtmlLabel()
+			Me.KeyComboBox1 = New Global.Guna.UI2.WinForms.Guna2ComboBox()
+			Me.Guna2Elipse2 = New Global.Guna.UI2.WinForms.Guna2Elipse(Me.components)
+			Me.DataGridViewExtension = New Global.Guna.UI2.WinForms.Guna2DataGridView()
+			Me.DataGridViewTextBoxColumn5 = New Global.System.Windows.Forms.DataGridViewTextBoxColumn()
+			Me.NumProg = New Global.Guna.UI2.WinForms.Guna2HtmlLabel()
+			Me.Mini = New Global.S500RAT.ValleyMini()
+			Me.ExitForm = New Global.S500RAT.ValleyClose()
+			Me.ProgressBar1 = New Global.Guna.UI2.WinForms.Guna2ProgressBar()
+			Me.Guna2BorderlessForm1 = New Global.Guna.UI2.WinForms.Guna2BorderlessForm(Me.components)
+			Me.Guna2DragControl1 = New Global.Guna.UI2.WinForms.Guna2DragControl(Me.components)
+			CType(Me.EncryptLogs, Global.System.ComponentModel.ISupportInitialize).BeginInit()
+			CType(Me.PictureBox_Background, Global.System.ComponentModel.ISupportInitialize).BeginInit()
+			CType(Me.DataGridViewExtension, Global.System.ComponentModel.ISupportInitialize).BeginInit()
+			MyBase.SuspendLayout()
+			Me.Timer1.Interval = 1000
+			Me.NameForm.AutoSize = True
+			Me.NameForm.BackColor = Global.System.Drawing.Color.Transparent
+			Me.NameForm.Font = New Global.System.Drawing.Font("Microsoft YaHei", 9.75F, Global.System.Drawing.FontStyle.Bold, Global.System.Drawing.GraphicsUnit.Point, 0)
+			Me.NameForm.ForeColor = Global.System.Drawing.Color.White
+			Me.NameForm.Location = New Global.System.Drawing.Point(21, 8)
+			Me.NameForm.Name = "NameForm"
+			Me.NameForm.Size = New Global.System.Drawing.Size(95, 19)
+			Me.NameForm.Style = Global.Sunny.UI.UIStyle.Custom
+			Me.NameForm.TabIndex = 309
+			Me.NameForm.Text = "Ransomware"
+			Me.NameForm.TextAlign = Global.System.Drawing.ContentAlignment.MiddleLeft
+			Me.ClientInfo.AutoSize = True
+			Me.ClientInfo.BackColor = Global.System.Drawing.Color.Transparent
+			Me.ClientInfo.Font = New Global.System.Drawing.Font("Arial", 8.25F, Global.System.Drawing.FontStyle.Bold)
+			Me.ClientInfo.ForeColor = Global.System.Drawing.Color.FromArgb(141, 152, 172)
+			Me.ClientInfo.Location = New Global.System.Drawing.Point(19, 32)
+			Me.ClientInfo.Name = "ClientInfo"
+			Me.ClientInfo.Size = New Global.System.Drawing.Size(15, 14)
+			Me.ClientInfo.TabIndex = 310
+			Me.ClientInfo.Text = "--"
+			Me.State.Anchor = (Global.System.Windows.Forms.AnchorStyles.Bottom Or Global.System.Windows.Forms.AnchorStyles.Left)
+			Me.State.AutoSize = True
+			Me.State.ForeColor = Global.System.Drawing.Color.White
+			Me.State.Location = New Global.System.Drawing.Point(19, 695)
+			Me.State.Margin = New Global.System.Windows.Forms.Padding(2, 0, 2, 0)
+			Me.State.Name = "State"
+			Me.State.Size = New Global.System.Drawing.Size(0, 13)
+			Me.State.TabIndex = 471
+			Me.Crypt.Anchor = (Global.System.Windows.Forms.AnchorStyles.Bottom Or Global.System.Windows.Forms.AnchorStyles.Right)
+			Me.Crypt.BackColor = Global.System.Drawing.Color.Transparent
+			Me.Crypt.BorderRadius = 8
+			Me.Crypt.CheckedState.Parent = Me.Crypt
+			Me.Crypt.CustomImages.Parent = Me.Crypt
+			Me.Crypt.Enabled = False
+			Me.Crypt.FillColor = Global.System.Drawing.Color.FromArgb(26, 31, 55)
+			Me.Crypt.FillColor2 = Global.System.Drawing.Color.FromArgb(26, 31, 55)
+			Me.Crypt.Font = New Global.System.Drawing.Font("Arial", 8.25F, Global.System.Drawing.FontStyle.Bold)
+			Me.Crypt.ForeColor = Global.System.Drawing.Color.White
+			Me.Crypt.HoverState.Parent = Me.Crypt
+			Me.Crypt.Location = New Global.System.Drawing.Point(797, 623)
+			Me.Crypt.Name = "Crypt"
+			Me.Crypt.ShadowDecoration.Parent = Me.Crypt
+			Me.Crypt.Size = New Global.System.Drawing.Size(223, 36)
+			Me.Crypt.TabIndex = 467
+			Me.Crypt.Text = "Encrypt"
+			Me.Decrypt.Anchor = (Global.System.Windows.Forms.AnchorStyles.Bottom Or Global.System.Windows.Forms.AnchorStyles.Right)
+			Me.Decrypt.BackColor = Global.System.Drawing.Color.Transparent
+			Me.Decrypt.BorderRadius = 8
+			Me.Decrypt.CheckedState.Parent = Me.Decrypt
+			Me.Decrypt.CustomImages.Parent = Me.Decrypt
+			Me.Decrypt.Enabled = False
+			Me.Decrypt.FillColor = Global.System.Drawing.Color.FromArgb(26, 31, 55)
+			Me.Decrypt.FillColor2 = Global.System.Drawing.Color.FromArgb(26, 31, 55)
+			Me.Decrypt.Font = New Global.System.Drawing.Font("Arial", 8.25F, Global.System.Drawing.FontStyle.Bold)
+			Me.Decrypt.ForeColor = Global.System.Drawing.Color.White
+			Me.Decrypt.HoverState.Parent = Me.Decrypt
+			Me.Decrypt.Location = New Global.System.Drawing.Point(797, 666)
+			Me.Decrypt.Name = "Decrypt"
+			Me.Decrypt.ShadowDecoration.Parent = Me.Decrypt
+			Me.Decrypt.Size = New Global.System.Drawing.Size(223, 36)
+			Me.Decrypt.TabIndex = 473
+			Me.Decrypt.Text = "Decrypt"
+			Me.ImageListLogs.ImageStream = CType(componentResourceManager.GetObject("ImageListLogs.ImageStream"), Global.System.Windows.Forms.ImageListStreamer)
+			Me.ImageListLogs.TransparentColor = Global.System.Drawing.Color.FromArgb(82, 43, 235)
+			Me.ImageListLogs.Images.SetKeyName(0, "E.png")
+			Me.ImageListLogs.Images.SetKeyName(1, "D.png")
+			Me.Guna2Elipse1.BorderRadius = 20
+			Me.Guna2Elipse1.TargetControl = Me.EncryptLogs
+			Me.EncryptLogs.AllowUserToAddRows = False
+			Me.EncryptLogs.AllowUserToDeleteRows = False
+			Me.EncryptLogs.AllowUserToResizeColumns = False
+			Me.EncryptLogs.AllowUserToResizeRows = False
+			dataGridViewCellStyle.BackColor = Global.System.Drawing.Color.FromArgb(209, 196, 233)
+			Me.EncryptLogs.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle
+			Me.EncryptLogs.Anchor = (Global.System.Windows.Forms.AnchorStyles.Top Or Global.System.Windows.Forms.AnchorStyles.Bottom Or Global.System.Windows.Forms.AnchorStyles.Left Or Global.System.Windows.Forms.AnchorStyles.Right)
+			Me.EncryptLogs.AutoSizeColumnsMode = Global.System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
+			Me.EncryptLogs.BackgroundColor = Global.System.Drawing.Color.FromArgb(26, 31, 55)
+			Me.EncryptLogs.BorderStyle = Global.System.Windows.Forms.BorderStyle.None
+			Me.EncryptLogs.CellBorderStyle = Global.System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
+			Me.EncryptLogs.ColumnHeadersBorderStyle = Global.System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+			dataGridViewCellStyle2.Alignment = Global.System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+			dataGridViewCellStyle2.BackColor = Global.System.Drawing.Color.FromArgb(103, 58, 183)
+			dataGridViewCellStyle2.Font = New Global.System.Drawing.Font("Arial", 8.25F, Global.System.Drawing.FontStyle.Bold)
+			dataGridViewCellStyle2.ForeColor = Global.System.Drawing.Color.White
+			dataGridViewCellStyle2.SelectionBackColor = Global.System.Drawing.SystemColors.Highlight
+			dataGridViewCellStyle2.SelectionForeColor = Global.System.Drawing.SystemColors.HighlightText
+			dataGridViewCellStyle2.WrapMode = Global.System.Windows.Forms.DataGridViewTriState.[True]
+			Me.EncryptLogs.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2
+			Me.EncryptLogs.ColumnHeadersHeightSizeMode = Global.System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
+			Me.EncryptLogs.Columns.AddRange(New Global.System.Windows.Forms.DataGridViewColumn() { Me.Column3, Me.Column4, Me.Column5, Me.Column6, Me.Column7 })
+			dataGridViewCellStyle3.Alignment = Global.System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+			dataGridViewCellStyle3.BackColor = Global.System.Drawing.Color.FromArgb(224, 215, 240)
+			dataGridViewCellStyle3.Font = New Global.System.Drawing.Font("Arial", 8.25F, Global.System.Drawing.FontStyle.Bold)
+			dataGridViewCellStyle3.ForeColor = Global.System.Drawing.Color.White
+			dataGridViewCellStyle3.SelectionBackColor = Global.System.Drawing.Color.FromArgb(153, 123, 207)
+			dataGridViewCellStyle3.SelectionForeColor = Global.System.Drawing.Color.Black
+			dataGridViewCellStyle3.WrapMode = Global.System.Windows.Forms.DataGridViewTriState.[False]
+			Me.EncryptLogs.DefaultCellStyle = dataGridViewCellStyle3
+			Me.EncryptLogs.EnableHeadersVisualStyles = False
+			Me.EncryptLogs.GridColor = Global.System.Drawing.Color.FromArgb(26, 31, 55)
+			Me.EncryptLogs.Location = New Global.System.Drawing.Point(21, 72)
+			Me.EncryptLogs.Name = "EncryptLogs"
+			Me.EncryptLogs.[ReadOnly] = True
+			Me.EncryptLogs.RowHeadersVisible = False
+			Me.EncryptLogs.RowHeadersWidth = 20
+			Me.EncryptLogs.RowHeadersWidthSizeMode = Global.System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
+			Me.EncryptLogs.SelectionMode = Global.System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+			Me.EncryptLogs.ShowCellErrors = False
+			Me.EncryptLogs.ShowEditingIcon = False
+			Me.EncryptLogs.ShowRowErrors = False
+			Me.EncryptLogs.Size = New Global.System.Drawing.Size(765, 540)
+			Me.EncryptLogs.TabIndex = 510
+			Me.EncryptLogs.Theme = Global.Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.DeepPurple
+			Me.EncryptLogs.ThemeStyle.AlternatingRowsStyle.BackColor = Global.System.Drawing.Color.FromArgb(209, 196, 233)
+			Me.EncryptLogs.ThemeStyle.AlternatingRowsStyle.Font = Nothing
+			Me.EncryptLogs.ThemeStyle.AlternatingRowsStyle.ForeColor = Global.System.Drawing.Color.Empty
+			Me.EncryptLogs.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = Global.System.Drawing.Color.Empty
+			Me.EncryptLogs.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = Global.System.Drawing.Color.Empty
+			Me.EncryptLogs.ThemeStyle.BackColor = Global.System.Drawing.Color.FromArgb(26, 31, 55)
+			Me.EncryptLogs.ThemeStyle.GridColor = Global.System.Drawing.Color.FromArgb(26, 31, 55)
+			Me.EncryptLogs.ThemeStyle.HeaderStyle.BackColor = Global.System.Drawing.Color.FromArgb(103, 58, 183)
+			Me.EncryptLogs.ThemeStyle.HeaderStyle.BorderStyle = Global.System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+			Me.EncryptLogs.ThemeStyle.HeaderStyle.Font = New Global.System.Drawing.Font("Arial", 8.25F, Global.System.Drawing.FontStyle.Bold)
+			Me.EncryptLogs.ThemeStyle.HeaderStyle.ForeColor = Global.System.Drawing.Color.White
+			Me.EncryptLogs.ThemeStyle.HeaderStyle.HeaightSizeMode = Global.System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
+			Me.EncryptLogs.ThemeStyle.HeaderStyle.Height = 23
+			Me.EncryptLogs.ThemeStyle.[ReadOnly] = True
+			Me.EncryptLogs.ThemeStyle.RowsStyle.BackColor = Global.System.Drawing.Color.FromArgb(224, 215, 240)
+			Me.EncryptLogs.ThemeStyle.RowsStyle.BorderStyle = Global.System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
+			Me.EncryptLogs.ThemeStyle.RowsStyle.Font = New Global.System.Drawing.Font("Arial", 8.25F, Global.System.Drawing.FontStyle.Bold)
+			Me.EncryptLogs.ThemeStyle.RowsStyle.ForeColor = Global.System.Drawing.Color.White
+			Me.EncryptLogs.ThemeStyle.RowsStyle.Height = 22
+			Me.EncryptLogs.ThemeStyle.RowsStyle.SelectionBackColor = Global.System.Drawing.Color.FromArgb(153, 123, 207)
+			Me.EncryptLogs.ThemeStyle.RowsStyle.SelectionForeColor = Global.System.Drawing.Color.Black
+			Me.Column3.AutoSizeMode = Global.System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
+			Me.Column3.HeaderText = "         "
+			Me.Column3.ImageLayout = Global.System.Windows.Forms.DataGridViewImageCellLayout.Zoom
+			Me.Column3.Name = "Column3"
+			Me.Column3.[ReadOnly] = True
+			Me.Column3.Width = 38
+			Me.Column4.AutoSizeMode = Global.System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
+			Me.Column4.HeaderText = "State"
+			Me.Column4.Name = "Column4"
+			Me.Column4.[ReadOnly] = True
+			Me.Column4.Width = 58
+			Me.Column5.AutoSizeMode = Global.System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
+			Me.Column5.HeaderText = "Date"
+			Me.Column5.Name = "Column5"
+			Me.Column5.[ReadOnly] = True
+			Me.Column5.Width = 54
+			Me.Column6.AutoSizeMode = Global.System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
+			Me.Column6.HeaderText = "Size"
+			Me.Column6.Name = "Column6"
+			Me.Column6.[ReadOnly] = True
+			Me.Column6.Width = 53
+			Me.Column7.AutoSizeMode = Global.System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+			Me.Column7.HeaderText = "Path"
+			Me.Column7.Name = "Column7"
+			Me.Column7.[ReadOnly] = True
+			Me.Encryptionkey.Anchor = (Global.System.Windows.Forms.AnchorStyles.Bottom Or Global.System.Windows.Forms.AnchorStyles.Right)
+			Me.Encryptionkey.Animated = True
+			Me.Encryptionkey.BackColor = Global.System.Drawing.Color.FromArgb(7, 11, 41)
+			Me.Encryptionkey.BorderColor = Global.System.Drawing.Color.FromArgb(26, 31, 55)
+			Me.Encryptionkey.BorderRadius = 6
+			Me.Encryptionkey.BorderStyle = Global.System.Drawing.Drawing2D.DashStyle.Custom
+			Me.Encryptionkey.Cursor = Global.System.Windows.Forms.Cursors.IBeam
+			Me.Encryptionkey.DefaultText = ""
+			Me.Encryptionkey.DisabledState.BorderColor = Global.System.Drawing.Color.FromArgb(208, 208, 208)
+			Me.Encryptionkey.DisabledState.FillColor = Global.System.Drawing.Color.FromArgb(226, 226, 226)
+			Me.Encryptionkey.DisabledState.ForeColor = Global.System.Drawing.Color.FromArgb(138, 138, 138)
+			Me.Encryptionkey.DisabledState.Parent = Me.Encryptionkey
+			Me.Encryptionkey.DisabledState.PlaceholderForeColor = Global.System.Drawing.Color.FromArgb(138, 138, 138)
+			Me.Encryptionkey.FillColor = Global.System.Drawing.Color.FromArgb(26, 31, 55)
+			Me.Encryptionkey.FocusedState.BorderColor = Global.System.Drawing.Color.FromArgb(82, 43, 255)
+			Me.Encryptionkey.FocusedState.Parent = Me.Encryptionkey
+			Me.Encryptionkey.Font = New Global.System.Drawing.Font("Arial", 8.25F, Global.System.Drawing.FontStyle.Bold)
+			Me.Encryptionkey.ForeColor = Global.System.Drawing.Color.White
+			Me.Encryptionkey.HoverState.BorderColor = Global.System.Drawing.Color.Magenta
+			Me.Encryptionkey.HoverState.Parent = Me.Encryptionkey
+			Me.Encryptionkey.IconLeft = CType(componentResourceManager.GetObject("Encryptionkey.IconLeft"), Global.System.Drawing.Image)
+			Me.Encryptionkey.IconRightCursor = Global.System.Windows.Forms.Cursors.Hand
+			Me.Encryptionkey.Location = New Global.System.Drawing.Point(797, 350)
+			Me.Encryptionkey.Margin = New Global.System.Windows.Forms.Padding(3, 2, 3, 2)
+			Me.Encryptionkey.Name = "Encryptionkey"
+			Me.Encryptionkey.PasswordChar = vbNullChar
+			Me.Encryptionkey.PlaceholderForeColor = Global.System.Drawing.Color.Gray
+			Me.Encryptionkey.PlaceholderText = "Encryption key"
+			Me.Encryptionkey.SelectedText = ""
+			Me.Encryptionkey.ShadowDecoration.Parent = Me.Encryptionkey
+			Me.Encryptionkey.Size = New Global.System.Drawing.Size(223, 27)
+			Me.Encryptionkey.TabIndex = 478
+			Me.Encryptionkey.TextAlign = Global.System.Windows.Forms.HorizontalAlignment.Center
+			Me.PictureBox_Background.Anchor = (Global.System.Windows.Forms.AnchorStyles.Bottom Or Global.System.Windows.Forms.AnchorStyles.Right)
+			Me.PictureBox_Background.BackColor = Global.System.Drawing.Color.Transparent
+			Me.PictureBox_Background.Enabled = False
+			Me.PictureBox_Background.Location = New Global.System.Drawing.Point(923, 389)
+			Me.PictureBox_Background.Name = "PictureBox_Background"
+			Me.PictureBox_Background.Size = New Global.System.Drawing.Size(97, 67)
+			Me.PictureBox_Background.SizeMode = Global.System.Windows.Forms.PictureBoxSizeMode.Zoom
+			Me.PictureBox_Background.TabIndex = 482
+			Me.PictureBox_Background.TabStop = False
+			Me.Chose_Backgroundimage.Anchor = (Global.System.Windows.Forms.AnchorStyles.Bottom Or Global.System.Windows.Forms.AnchorStyles.Right)
+			Me.Chose_Backgroundimage.BackColor = Global.System.Drawing.Color.Transparent
+			Me.Chose_Backgroundimage.BorderRadius = 8
+			Me.Chose_Backgroundimage.CheckedState.Parent = Me.Chose_Backgroundimage
+			Me.Chose_Backgroundimage.CustomImages.Parent = Me.Chose_Backgroundimage
+			Me.Chose_Backgroundimage.Enabled = False
+			Me.Chose_Backgroundimage.FillColor = Global.System.Drawing.Color.FromArgb(26, 31, 55)
+			Me.Chose_Backgroundimage.FillColor2 = Global.System.Drawing.Color.FromArgb(26, 31, 55)
+			Me.Chose_Backgroundimage.Font = New Global.System.Drawing.Font("Arial", 8.25F, Global.System.Drawing.FontStyle.Bold)
+			Me.Chose_Backgroundimage.ForeColor = Global.System.Drawing.Color.White
+			Me.Chose_Backgroundimage.HoverState.Parent = Me.Chose_Backgroundimage
+			Me.Chose_Backgroundimage.Location = New Global.System.Drawing.Point(967, 467)
+			Me.Chose_Backgroundimage.Name = "Chose_Backgroundimage"
+			Me.Chose_Backgroundimage.ShadowDecoration.Parent = Me.Chose_Backgroundimage
+			Me.Chose_Backgroundimage.Size = New Global.System.Drawing.Size(53, 30)
+			Me.Chose_Backgroundimage.TabIndex = 483
+			Me.Chose_Backgroundimage.Text = "Choose"
+			Me.Label22.Anchor = (Global.System.Windows.Forms.AnchorStyles.Bottom Or Global.System.Windows.Forms.AnchorStyles.Right)
+			Me.Label22.AutoSize = True
+			Me.Label22.BackColor = Global.System.Drawing.Color.Transparent
+			Me.Label22.Font = New Global.System.Drawing.Font("Arial", 8.25F, Global.System.Drawing.FontStyle.Bold)
+			Me.Label22.ForeColor = Global.System.Drawing.Color.FromArgb(143, 156, 176)
+			Me.Label22.Location = New Global.System.Drawing.Point(846, 476)
+			Me.Label22.Name = "Label22"
+			Me.Label22.Size = New Global.System.Drawing.Size(122, 14)
+			Me.Label22.TabIndex = 486
+			Me.Label22.Text = "Desktop Background"
+			Me.EnableBackground.Anchor = (Global.System.Windows.Forms.AnchorStyles.Bottom Or Global.System.Windows.Forms.AnchorStyles.Right)
+			Me.EnableBackground.Animated = True
+			Me.EnableBackground.AutoRoundedCorners = True
+			Me.EnableBackground.BackColor = Global.System.Drawing.Color.Transparent
+			Me.EnableBackground.CheckedState.BorderColor = Global.System.Drawing.Color.FromArgb(82, 43, 235)
+			Me.EnableBackground.CheckedState.BorderRadius = 8
+			Me.EnableBackground.CheckedState.FillColor = Global.System.Drawing.Color.FromArgb(82, 43, 235)
+			Me.EnableBackground.CheckedState.InnerBorderColor = Global.System.Drawing.Color.White
+			Me.EnableBackground.CheckedState.InnerBorderRadius = 4
+			Me.EnableBackground.CheckedState.InnerColor = Global.System.Drawing.Color.White
+			Me.EnableBackground.CheckedState.Parent = Me.EnableBackground
+			Me.EnableBackground.Location = New Global.System.Drawing.Point(806, 473)
+			Me.EnableBackground.Name = "EnableBackground"
+			Me.EnableBackground.ShadowDecoration.Parent = Me.EnableBackground
+			Me.EnableBackground.Size = New Global.System.Drawing.Size(35, 19)
+			Me.EnableBackground.TabIndex = 485
+			Me.EnableBackground.UncheckedState.BorderColor = Global.System.Drawing.Color.Red
+			Me.EnableBackground.UncheckedState.BorderRadius = 8
+			Me.EnableBackground.UncheckedState.FillColor = Global.System.Drawing.Color.FromArgb(66, 69, 91)
+			Me.EnableBackground.UncheckedState.InnerBorderColor = Global.System.Drawing.Color.White
+			Me.EnableBackground.UncheckedState.InnerBorderRadius = 4
+			Me.EnableBackground.UncheckedState.InnerColor = Global.System.Drawing.Color.White
+			Me.EnableBackground.UncheckedState.Parent = Me.EnableBackground
+			Me.StateFiles.Anchor = (Global.System.Windows.Forms.AnchorStyles.Bottom Or Global.System.Windows.Forms.AnchorStyles.Right)
+			Me.StateFiles.BackColor = Global.System.Drawing.Color.Transparent
+			Me.StateFiles.Font = New Global.System.Drawing.Font("Nirmala UI", 9.75F)
+			Me.StateFiles.ForeColor = Global.System.Drawing.Color.FromArgb(125, 137, 149)
+			Me.StateFiles.Location = New Global.System.Drawing.Point(820, 441)
+			Me.StateFiles.Name = "StateFiles"
+			Me.StateFiles.Size = New Global.System.Drawing.Size(13, 19)
+			Me.StateFiles.TabIndex = 492
+			Me.StateFiles.Text = "--"
+			Me.NumList.Anchor = (Global.System.Windows.Forms.AnchorStyles.Bottom Or Global.System.Windows.Forms.AnchorStyles.Right)
+			Me.NumList.BackColor = Global.System.Drawing.Color.Transparent
+			Me.NumList.Font = New Global.System.Drawing.Font("Nirmala UI", 12F, Global.System.Drawing.FontStyle.Bold)
+			Me.NumList.ForeColor = Global.System.Drawing.Color.White
+			Me.NumList.Location = New Global.System.Drawing.Point(820, 413)
+			Me.NumList.Name = "NumList"
+			Me.NumList.Size = New Global.System.Drawing.Size(23, 23)
+			Me.NumList.TabIndex = 491
+			Me.NumList.Text = "+0"
+			Me.TextBox1.Anchor = (Global.System.Windows.Forms.AnchorStyles.Bottom Or Global.System.Windows.Forms.AnchorStyles.Right)
+			Me.TextBox1.Animated = True
+			Me.TextBox1.BackColor = Global.System.Drawing.Color.FromArgb(7, 11, 41)
+			Me.TextBox1.BorderColor = Global.System.Drawing.Color.FromArgb(26, 31, 55)
+			Me.TextBox1.BorderRadius = 7
+			Me.TextBox1.BorderStyle = Global.System.Drawing.Drawing2D.DashStyle.Custom
+			Me.TextBox1.Cursor = Global.System.Windows.Forms.Cursors.IBeam
+			Me.TextBox1.DefaultText = ""
+			Me.TextBox1.DisabledState.BorderColor = Global.System.Drawing.Color.FromArgb(208, 208, 208)
+			Me.TextBox1.DisabledState.FillColor = Global.System.Drawing.Color.FromArgb(226, 226, 226)
+			Me.TextBox1.DisabledState.ForeColor = Global.System.Drawing.Color.FromArgb(138, 138, 138)
+			Me.TextBox1.DisabledState.Parent = Me.TextBox1
+			Me.TextBox1.DisabledState.PlaceholderForeColor = Global.System.Drawing.Color.FromArgb(138, 138, 138)
+			Me.TextBox1.FillColor = Global.System.Drawing.Color.FromArgb(26, 31, 55)
+			Me.TextBox1.FocusedState.BorderColor = Global.System.Drawing.Color.FromArgb(94, 148, 255)
+			Me.TextBox1.FocusedState.Parent = Me.TextBox1
+			Me.TextBox1.Font = New Global.System.Drawing.Font("Arial", 8.25F, Global.System.Drawing.FontStyle.Bold)
+			Me.TextBox1.ForeColor = Global.System.Drawing.Color.White
+			Me.TextBox1.HoverState.BorderColor = Global.System.Drawing.Color.FromArgb(94, 148, 255)
+			Me.TextBox1.HoverState.Parent = Me.TextBox1
+			Me.TextBox1.IconLeft = CType(componentResourceManager.GetObject("TextBox1.IconLeft"), Global.System.Drawing.Image)
+			Me.TextBox1.IconLeftCursor = Global.System.Windows.Forms.Cursors.Hand
+			Me.TextBox1.IconRight = CType(componentResourceManager.GetObject("TextBox1.IconRight"), Global.System.Drawing.Image)
+			Me.TextBox1.IconRightCursor = Global.System.Windows.Forms.Cursors.Hand
+			Me.TextBox1.Location = New Global.System.Drawing.Point(797, 263)
+			Me.TextBox1.Margin = New Global.System.Windows.Forms.Padding(3, 2, 3, 2)
+			Me.TextBox1.Name = "TextBox1"
+			Me.TextBox1.PasswordChar = vbNullChar
+			Me.TextBox1.PlaceholderForeColor = Global.System.Drawing.Color.Gray
+			Me.TextBox1.PlaceholderText = ".Extension"
+			Me.TextBox1.SelectedText = ""
+			Me.TextBox1.ShadowDecoration.Parent = Me.TextBox1
+			Me.TextBox1.Size = New Global.System.Drawing.Size(223, 27)
+			Me.TextBox1.TabIndex = 489
+			Me.TextBox1.TextAlign = Global.System.Windows.Forms.HorizontalAlignment.Center
+			Me.label4.Anchor = (Global.System.Windows.Forms.AnchorStyles.Bottom Or Global.System.Windows.Forms.AnchorStyles.Right)
+			Me.label4.BackColor = Global.System.Drawing.Color.Transparent
+			Me.label4.Font = New Global.System.Drawing.Font("Arial", 8.25F, Global.System.Drawing.FontStyle.Bold)
+			Me.label4.ForeColor = Global.System.Drawing.Color.White
+			Me.label4.Location = New Global.System.Drawing.Point(807, 389)
+			Me.label4.Name = "label4"
+			Me.label4.Size = New Global.System.Drawing.Size(85, 16)
+			Me.label4.TabIndex = 488
+			Me.label4.Text = "Encrypted files"
+			Me.Label1.Anchor = (Global.System.Windows.Forms.AnchorStyles.Bottom Or Global.System.Windows.Forms.AnchorStyles.Right)
+			Me.Label1.AutoSize = True
+			Me.Label1.BackColor = Global.System.Drawing.Color.Transparent
+			Me.Label1.Font = New Global.System.Drawing.Font("Arial", 8.25F, Global.System.Drawing.FontStyle.Bold)
+			Me.Label1.ForeColor = Global.System.Drawing.Color.FromArgb(143, 156, 176)
+			Me.Label1.Location = New Global.System.Drawing.Point(846, 514)
+			Me.Label1.Name = "Label1"
+			Me.Label1.Size = New Global.System.Drawing.Size(89, 14)
+			Me.Label1.TabIndex = 495
+			Me.Label1.Text = "Text document"
+			Me.EnableTextDocument.Anchor = (Global.System.Windows.Forms.AnchorStyles.Bottom Or Global.System.Windows.Forms.AnchorStyles.Right)
+			Me.EnableTextDocument.Animated = True
+			Me.EnableTextDocument.AutoRoundedCorners = True
+			Me.EnableTextDocument.BackColor = Global.System.Drawing.Color.Transparent
+			Me.EnableTextDocument.CheckedState.BorderColor = Global.System.Drawing.Color.FromArgb(82, 43, 235)
+			Me.EnableTextDocument.CheckedState.BorderRadius = 8
+			Me.EnableTextDocument.CheckedState.FillColor = Global.System.Drawing.Color.FromArgb(82, 43, 235)
+			Me.EnableTextDocument.CheckedState.InnerBorderColor = Global.System.Drawing.Color.White
+			Me.EnableTextDocument.CheckedState.InnerBorderRadius = 4
+			Me.EnableTextDocument.CheckedState.InnerColor = Global.System.Drawing.Color.White
+			Me.EnableTextDocument.CheckedState.Parent = Me.EnableTextDocument
+			Me.EnableTextDocument.Location = New Global.System.Drawing.Point(806, 511)
+			Me.EnableTextDocument.Name = "EnableTextDocument"
+			Me.EnableTextDocument.ShadowDecoration.Parent = Me.EnableTextDocument
+			Me.EnableTextDocument.Size = New Global.System.Drawing.Size(35, 19)
+			Me.EnableTextDocument.TabIndex = 494
+			Me.EnableTextDocument.UncheckedState.BorderColor = Global.System.Drawing.Color.Red
+			Me.EnableTextDocument.UncheckedState.BorderRadius = 8
+			Me.EnableTextDocument.UncheckedState.FillColor = Global.System.Drawing.Color.FromArgb(66, 69, 91)
+			Me.EnableTextDocument.UncheckedState.InnerBorderColor = Global.System.Drawing.Color.White
+			Me.EnableTextDocument.UncheckedState.InnerBorderRadius = 4
+			Me.EnableTextDocument.UncheckedState.InnerColor = Global.System.Drawing.Color.White
+			Me.EnableTextDocument.UncheckedState.Parent = Me.EnableTextDocument
+			Me.Choose_Text.Anchor = (Global.System.Windows.Forms.AnchorStyles.Bottom Or Global.System.Windows.Forms.AnchorStyles.Right)
+			Me.Choose_Text.BackColor = Global.System.Drawing.Color.Transparent
+			Me.Choose_Text.BorderRadius = 8
+			Me.Choose_Text.CheckedState.Parent = Me.Choose_Text
+			Me.Choose_Text.CustomImages.Parent = Me.Choose_Text
+			Me.Choose_Text.Enabled = False
+			Me.Choose_Text.FillColor = Global.System.Drawing.Color.FromArgb(26, 31, 55)
+			Me.Choose_Text.FillColor2 = Global.System.Drawing.Color.FromArgb(26, 31, 55)
+			Me.Choose_Text.Font = New Global.System.Drawing.Font("Arial", 8.25F, Global.System.Drawing.FontStyle.Bold)
+			Me.Choose_Text.ForeColor = Global.System.Drawing.Color.White
+			Me.Choose_Text.HoverState.Parent = Me.Choose_Text
+			Me.Choose_Text.Location = New Global.System.Drawing.Point(967, 508)
+			Me.Choose_Text.Name = "Choose_Text"
+			Me.Choose_Text.ShadowDecoration.Parent = Me.Choose_Text
+			Me.Choose_Text.Size = New Global.System.Drawing.Size(53, 30)
+			Me.Choose_Text.TabIndex = 493
+			Me.Choose_Text.Text = "Choose"
+			Me.DocumentPath.Anchor = (Global.System.Windows.Forms.AnchorStyles.Bottom Or Global.System.Windows.Forms.AnchorStyles.Right)
+			Me.DocumentPath.BackColor = Global.System.Drawing.Color.Transparent
+			Me.DocumentPath.Font = New Global.System.Drawing.Font("Arial", 8.25F, Global.System.Drawing.FontStyle.Bold)
+			Me.DocumentPath.ForeColor = Global.System.Drawing.Color.FromArgb(125, 137, 149)
+			Me.DocumentPath.Location = New Global.System.Drawing.Point(807, 536)
+			Me.DocumentPath.Name = "DocumentPath"
+			Me.DocumentPath.Size = New Global.System.Drawing.Size(3, 2)
+			Me.DocumentPath.TabIndex = 496
+			Me.Guna2ResizeBox1.Anchor = (Global.System.Windows.Forms.AnchorStyles.Bottom Or Global.System.Windows.Forms.AnchorStyles.Right)
+			Me.Guna2ResizeBox1.BackColor = Global.System.Drawing.Color.Transparent
+			Me.Guna2ResizeBox1.FillColor = Global.System.Drawing.Color.Silver
+			Me.Guna2ResizeBox1.ForeColor = Global.System.Drawing.Color.Empty
+			Me.Guna2ResizeBox1.Location = New Global.System.Drawing.Point(1020, 710)
+			Me.Guna2ResizeBox1.Name = "Guna2ResizeBox1"
+			Me.Guna2ResizeBox1.Size = New Global.System.Drawing.Size(17, 19)
+			Me.Guna2ResizeBox1.TabIndex = 497
+			Me.Guna2ResizeBox1.TargetControl = Me
+			Me.Guna2ResizeBox1.UseTransparentBackground = True
+			Me.FileEncrypError.Anchor = (Global.System.Windows.Forms.AnchorStyles.Bottom Or Global.System.Windows.Forms.AnchorStyles.Left)
+			Me.FileEncrypError.AutoSize = True
+			Me.FileEncrypError.LinkColor = Global.System.Drawing.Color.White
+			Me.FileEncrypError.Location = New Global.System.Drawing.Point(22, 715)
+			Me.FileEncrypError.Name = "FileEncrypError"
+			Me.FileEncrypError.Size = New Global.System.Drawing.Size(16, 13)
+			Me.FileEncrypError.TabIndex = 498
+			Me.FileEncrypError.TabStop = True
+			Me.FileEncrypError.Text = "..."
+			Me.Timer2.Enabled = True
+			Me.GetDriversComboBox.Anchor = (Global.System.Windows.Forms.AnchorStyles.Bottom Or Global.System.Windows.Forms.AnchorStyles.Right)
+			Me.GetDriversComboBox.Animated = True
+			Me.GetDriversComboBox.BackColor = Global.System.Drawing.Color.Transparent
+			Me.GetDriversComboBox.BorderColor = Global.System.Drawing.Color.FromArgb(82, 43, 255)
+			Me.GetDriversComboBox.BorderRadius = 8
+			Me.GetDriversComboBox.DrawMode = Global.System.Windows.Forms.DrawMode.OwnerDrawFixed
+			Me.GetDriversComboBox.DropDownStyle = Global.System.Windows.Forms.ComboBoxStyle.DropDownList
+			Me.GetDriversComboBox.FillColor = Global.System.Drawing.Color.FromArgb(7, 11, 41)
+			Me.GetDriversComboBox.FocusedColor = Global.System.Drawing.Color.Empty
+			Me.GetDriversComboBox.FocusedState.Parent = Me.GetDriversComboBox
+			Me.GetDriversComboBox.Font = New Global.System.Drawing.Font("Arial", 8.25F, Global.System.Drawing.FontStyle.Bold)
+			Me.GetDriversComboBox.ForeColor = Global.System.Drawing.Color.White
+			Me.GetDriversComboBox.HoverState.Parent = Me.GetDriversComboBox
+			Me.GetDriversComboBox.ItemHeight = 30
+			Me.GetDriversComboBox.ItemsAppearance.BackColor = Global.System.Drawing.Color.FromArgb(23, 27, 82)
+			Me.GetDriversComboBox.ItemsAppearance.ForeColor = Global.System.Drawing.Color.White
+			Me.GetDriversComboBox.ItemsAppearance.Parent = Me.GetDriversComboBox
+			Me.GetDriversComboBox.ItemsAppearance.SelectedBackColor = Global.System.Drawing.Color.FromArgb(82, 43, 255)
+			Me.GetDriversComboBox.Location = New Global.System.Drawing.Point(797, 579)
+			Me.GetDriversComboBox.Name = "GetDriversComboBox"
+			Me.GetDriversComboBox.ShadowDecoration.Color = Global.System.Drawing.Color.White
+			Me.GetDriversComboBox.ShadowDecoration.Parent = Me.GetDriversComboBox
+			Me.GetDriversComboBox.Size = New Global.System.Drawing.Size(223, 36)
+			Me.GetDriversComboBox.TabIndex = 499
+			Me.Guna2HtmlLabel1.Anchor = (Global.System.Windows.Forms.AnchorStyles.Bottom Or Global.System.Windows.Forms.AnchorStyles.Right)
+			Me.Guna2HtmlLabel1.BackColor = Global.System.Drawing.Color.Transparent
+			Me.Guna2HtmlLabel1.Font = New Global.System.Drawing.Font("Arial", 8.25F, Global.System.Drawing.FontStyle.Bold)
+			Me.Guna2HtmlLabel1.ForeColor = Global.System.Drawing.Color.White
+			Me.Guna2HtmlLabel1.Location = New Global.System.Drawing.Point(806, 558)
+			Me.Guna2HtmlLabel1.Name = "Guna2HtmlLabel1"
+			Me.Guna2HtmlLabel1.Size = New Global.System.Drawing.Size(88, 16)
+			Me.Guna2HtmlLabel1.TabIndex = 500
+			Me.Guna2HtmlLabel1.Text = "Encrypting Path"
+			Me.KeyComboBox1.Anchor = (Global.System.Windows.Forms.AnchorStyles.Bottom Or Global.System.Windows.Forms.AnchorStyles.Right)
+			Me.KeyComboBox1.Animated = True
+			Me.KeyComboBox1.BackColor = Global.System.Drawing.Color.Transparent
+			Me.KeyComboBox1.BorderColor = Global.System.Drawing.Color.FromArgb(82, 43, 255)
+			Me.KeyComboBox1.BorderRadius = 8
+			Me.KeyComboBox1.DrawMode = Global.System.Windows.Forms.DrawMode.OwnerDrawFixed
+			Me.KeyComboBox1.DropDownStyle = Global.System.Windows.Forms.ComboBoxStyle.DropDownList
+			Me.KeyComboBox1.FillColor = Global.System.Drawing.Color.FromArgb(7, 11, 41)
+			Me.KeyComboBox1.FocusedColor = Global.System.Drawing.Color.Empty
+			Me.KeyComboBox1.FocusedState.Parent = Me.KeyComboBox1
+			Me.KeyComboBox1.Font = New Global.System.Drawing.Font("Arial", 8.25F, Global.System.Drawing.FontStyle.Bold)
+			Me.KeyComboBox1.ForeColor = Global.System.Drawing.Color.White
+			Me.KeyComboBox1.HoverState.Parent = Me.KeyComboBox1
+			Me.KeyComboBox1.ItemHeight = 30
+			Me.KeyComboBox1.ItemsAppearance.BackColor = Global.System.Drawing.Color.FromArgb(23, 27, 82)
+			Me.KeyComboBox1.ItemsAppearance.ForeColor = Global.System.Drawing.Color.White
+			Me.KeyComboBox1.ItemsAppearance.Parent = Me.KeyComboBox1
+			Me.KeyComboBox1.ItemsAppearance.SelectedBackColor = Global.System.Drawing.Color.FromArgb(82, 43, 255)
+			Me.KeyComboBox1.Location = New Global.System.Drawing.Point(797, 303)
+			Me.KeyComboBox1.Name = "KeyComboBox1"
+			Me.KeyComboBox1.ShadowDecoration.Color = Global.System.Drawing.Color.White
+			Me.KeyComboBox1.ShadowDecoration.Parent = Me.KeyComboBox1
+			Me.KeyComboBox1.Size = New Global.System.Drawing.Size(223, 36)
+			Me.KeyComboBox1.TabIndex = 501
+			Me.Guna2Elipse2.BorderRadius = 20
+			Me.Guna2Elipse2.TargetControl = Me.DataGridViewExtension
+			Me.DataGridViewExtension.AllowUserToAddRows = False
+			Me.DataGridViewExtension.AllowUserToDeleteRows = False
+			Me.DataGridViewExtension.AllowUserToResizeColumns = False
+			Me.DataGridViewExtension.AllowUserToResizeRows = False
+			dataGridViewCellStyle4.BackColor = Global.System.Drawing.Color.FromArgb(209, 196, 233)
+			Me.DataGridViewExtension.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4
+			Me.DataGridViewExtension.Anchor = (Global.System.Windows.Forms.AnchorStyles.Top Or Global.System.Windows.Forms.AnchorStyles.Bottom Or Global.System.Windows.Forms.AnchorStyles.Right)
+			Me.DataGridViewExtension.AutoSizeColumnsMode = Global.System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
+			Me.DataGridViewExtension.BackgroundColor = Global.System.Drawing.Color.FromArgb(26, 31, 55)
+			Me.DataGridViewExtension.BorderStyle = Global.System.Windows.Forms.BorderStyle.None
+			Me.DataGridViewExtension.CellBorderStyle = Global.System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
+			Me.DataGridViewExtension.ColumnHeadersBorderStyle = Global.System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+			dataGridViewCellStyle5.Alignment = Global.System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+			dataGridViewCellStyle5.BackColor = Global.System.Drawing.Color.FromArgb(103, 58, 183)
+			dataGridViewCellStyle5.Font = New Global.System.Drawing.Font("Arial", 8.25F, Global.System.Drawing.FontStyle.Bold)
+			dataGridViewCellStyle5.ForeColor = Global.System.Drawing.Color.White
+			dataGridViewCellStyle5.SelectionBackColor = Global.System.Drawing.SystemColors.Highlight
+			dataGridViewCellStyle5.SelectionForeColor = Global.System.Drawing.SystemColors.HighlightText
+			dataGridViewCellStyle5.WrapMode = Global.System.Windows.Forms.DataGridViewTriState.[True]
+			Me.DataGridViewExtension.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5
+			Me.DataGridViewExtension.ColumnHeadersHeightSizeMode = Global.System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
+			Me.DataGridViewExtension.Columns.AddRange(New Global.System.Windows.Forms.DataGridViewColumn() { Me.DataGridViewTextBoxColumn5 })
+			dataGridViewCellStyle6.Alignment = Global.System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+			dataGridViewCellStyle6.BackColor = Global.System.Drawing.Color.FromArgb(224, 215, 240)
+			dataGridViewCellStyle6.Font = New Global.System.Drawing.Font("Arial", 8.25F, Global.System.Drawing.FontStyle.Bold)
+			dataGridViewCellStyle6.ForeColor = Global.System.Drawing.Color.White
+			dataGridViewCellStyle6.SelectionBackColor = Global.System.Drawing.Color.FromArgb(153, 123, 207)
+			dataGridViewCellStyle6.SelectionForeColor = Global.System.Drawing.Color.Black
+			dataGridViewCellStyle6.WrapMode = Global.System.Windows.Forms.DataGridViewTriState.[False]
+			Me.DataGridViewExtension.DefaultCellStyle = dataGridViewCellStyle6
+			Me.DataGridViewExtension.EnableHeadersVisualStyles = False
+			Me.DataGridViewExtension.GridColor = Global.System.Drawing.Color.FromArgb(26, 31, 55)
+			Me.DataGridViewExtension.Location = New Global.System.Drawing.Point(797, 72)
+			Me.DataGridViewExtension.MultiSelect = False
+			Me.DataGridViewExtension.Name = "DataGridViewExtension"
+			Me.DataGridViewExtension.[ReadOnly] = True
+			Me.DataGridViewExtension.RowHeadersVisible = False
+			Me.DataGridViewExtension.RowHeadersWidth = 20
+			Me.DataGridViewExtension.RowHeadersWidthSizeMode = Global.System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
+			Me.DataGridViewExtension.SelectionMode = Global.System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+			Me.DataGridViewExtension.ShowCellErrors = False
+			Me.DataGridViewExtension.ShowEditingIcon = False
+			Me.DataGridViewExtension.ShowRowErrors = False
+			Me.DataGridViewExtension.Size = New Global.System.Drawing.Size(223, 186)
+			Me.DataGridViewExtension.TabIndex = 511
+			Me.DataGridViewExtension.Theme = Global.Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.DeepPurple
+			Me.DataGridViewExtension.ThemeStyle.AlternatingRowsStyle.BackColor = Global.System.Drawing.Color.FromArgb(209, 196, 233)
+			Me.DataGridViewExtension.ThemeStyle.AlternatingRowsStyle.Font = Nothing
+			Me.DataGridViewExtension.ThemeStyle.AlternatingRowsStyle.ForeColor = Global.System.Drawing.Color.Empty
+			Me.DataGridViewExtension.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = Global.System.Drawing.Color.Empty
+			Me.DataGridViewExtension.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = Global.System.Drawing.Color.Empty
+			Me.DataGridViewExtension.ThemeStyle.BackColor = Global.System.Drawing.Color.FromArgb(26, 31, 55)
+			Me.DataGridViewExtension.ThemeStyle.GridColor = Global.System.Drawing.Color.FromArgb(26, 31, 55)
+			Me.DataGridViewExtension.ThemeStyle.HeaderStyle.BackColor = Global.System.Drawing.Color.FromArgb(103, 58, 183)
+			Me.DataGridViewExtension.ThemeStyle.HeaderStyle.BorderStyle = Global.System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+			Me.DataGridViewExtension.ThemeStyle.HeaderStyle.Font = New Global.System.Drawing.Font("Arial", 8.25F, Global.System.Drawing.FontStyle.Bold)
+			Me.DataGridViewExtension.ThemeStyle.HeaderStyle.ForeColor = Global.System.Drawing.Color.White
+			Me.DataGridViewExtension.ThemeStyle.HeaderStyle.HeaightSizeMode = Global.System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
+			Me.DataGridViewExtension.ThemeStyle.HeaderStyle.Height = 23
+			Me.DataGridViewExtension.ThemeStyle.[ReadOnly] = True
+			Me.DataGridViewExtension.ThemeStyle.RowsStyle.BackColor = Global.System.Drawing.Color.FromArgb(224, 215, 240)
+			Me.DataGridViewExtension.ThemeStyle.RowsStyle.BorderStyle = Global.System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
+			Me.DataGridViewExtension.ThemeStyle.RowsStyle.Font = New Global.System.Drawing.Font("Arial", 8.25F, Global.System.Drawing.FontStyle.Bold)
+			Me.DataGridViewExtension.ThemeStyle.RowsStyle.ForeColor = Global.System.Drawing.Color.White
+			Me.DataGridViewExtension.ThemeStyle.RowsStyle.Height = 22
+			Me.DataGridViewExtension.ThemeStyle.RowsStyle.SelectionBackColor = Global.System.Drawing.Color.FromArgb(153, 123, 207)
+			Me.DataGridViewExtension.ThemeStyle.RowsStyle.SelectionForeColor = Global.System.Drawing.Color.Black
+			Me.DataGridViewTextBoxColumn5.AutoSizeMode = Global.System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+			Me.DataGridViewTextBoxColumn5.HeaderText = "Extension"
+			Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
+			Me.DataGridViewTextBoxColumn5.[ReadOnly] = True
+			Me.NumProg.Anchor = (Global.System.Windows.Forms.AnchorStyles.Bottom Or Global.System.Windows.Forms.AnchorStyles.Left)
+			Me.NumProg.BackColor = Global.System.Drawing.Color.Transparent
+			Me.NumProg.Font = New Global.System.Drawing.Font("Nirmala UI", 18F, Global.System.Drawing.FontStyle.Bold, Global.System.Drawing.GraphicsUnit.Point, 0)
+			Me.NumProg.ForeColor = Global.System.Drawing.Color.White
+			Me.NumProg.Location = New Global.System.Drawing.Point(21, 655)
+			Me.NumProg.Name = "NumProg"
+			Me.NumProg.Size = New Global.System.Drawing.Size(38, 34)
+			Me.NumProg.TabIndex = 502
+			Me.NumProg.Text = "0%"
+			Me.Mini.Anchor = (Global.System.Windows.Forms.AnchorStyles.Top Or Global.System.Windows.Forms.AnchorStyles.Right)
+			Me.Mini.Cursor = Global.System.Windows.Forms.Cursors.Hand
+			Me.Mini.Location = New Global.System.Drawing.Point(989, 12)
+			Me.Mini.Name = "Mini"
+			Me.Mini.Size = New Global.System.Drawing.Size(20, 20)
+			Me.Mini.TabIndex = 566
+			Me.Mini.Text = "ValleyMini1"
+			Me.ExitForm.Anchor = (Global.System.Windows.Forms.AnchorStyles.Top Or Global.System.Windows.Forms.AnchorStyles.Right)
+			Me.ExitForm.Cursor = Global.System.Windows.Forms.Cursors.Hand
+			Me.ExitForm.Location = New Global.System.Drawing.Point(1015, 12)
+			Me.ExitForm.Name = "ExitForm"
+			Me.ExitForm.Size = New Global.System.Drawing.Size(20, 20)
+			Me.ExitForm.TabIndex = 564
+			Me.ExitForm.Text = "ValleyClose1"
+			Me.ProgressBar1.Anchor = (Global.System.Windows.Forms.AnchorStyles.Bottom Or Global.System.Windows.Forms.AnchorStyles.Left Or Global.System.Windows.Forms.AnchorStyles.Right)
+			Me.ProgressBar1.BackColor = Global.System.Drawing.Color.Transparent
+			Me.ProgressBar1.BorderColor = Global.System.Drawing.Color.White
+			Me.ProgressBar1.BorderRadius = 5
+			Me.ProgressBar1.FillColor = Global.System.Drawing.Color.FromArgb(26, 31, 55)
+			Me.ProgressBar1.ForeColor = Global.System.Drawing.Color.White
+			Me.ProgressBar1.GradientMode = Global.System.Drawing.Drawing2D.LinearGradientMode.Horizontal
+			Me.ProgressBar1.Location = New Global.System.Drawing.Point(21, 618)
+			Me.ProgressBar1.Name = "ProgressBar1"
+			Me.ProgressBar1.ProgressColor = Global.System.Drawing.Color.FromArgb(255, 128, 0)
+			Me.ProgressBar1.ProgressColor2 = Global.System.Drawing.Color.FromArgb(0, 192, 0)
+			Me.ProgressBar1.ShadowDecoration.Parent = Me.ProgressBar1
+			Me.ProgressBar1.ShowPercentage = True
+			Me.ProgressBar1.Size = New Global.System.Drawing.Size(765, 31)
+			Me.ProgressBar1.TabIndex = 567
+			Me.ProgressBar1.TextRenderingHint = Global.System.Drawing.Text.TextRenderingHint.SystemDefault
+			Me.Guna2BorderlessForm1.AnimateWindow = True
+			Me.Guna2BorderlessForm1.BorderRadius = 40
+			Me.Guna2BorderlessForm1.ContainerControl = Me
+			Me.Guna2BorderlessForm1.DockIndicatorColor = Global.System.Drawing.Color.FromArgb(56, 37, 200)
+			Me.Guna2BorderlessForm1.DragStartTransparencyValue = 0.6
+			Me.Guna2BorderlessForm1.ShadowColor = Global.System.Drawing.Color.FromArgb(56, 37, 200)
+			Me.Guna2BorderlessForm1.TransparentWhileDrag = True
+			Me.Guna2DragControl1.ContainerControl = Me
+			Me.Guna2DragControl1.DockForm = True
+			Me.Guna2DragControl1.DockIndicatorColor = Global.System.Drawing.Color.FromArgb(56, 37, 200)
+			Me.Guna2DragControl1.DragMode = Global.Guna.UI2.WinForms.Enums.DragMode.Control
+			Me.Guna2DragControl1.DragStartTransparencyValue = 0.6
+			Me.Guna2DragControl1.TargetControl = Me
+			Me.Guna2DragControl1.TransparentWhileDrag = True
+			Me.Guna2DragControl1.UseTransparentDrag = True
+			MyBase.AutoScaleDimensions = New Global.System.Drawing.SizeF(96F, 96F)
+			MyBase.AutoScaleMode = Global.System.Windows.Forms.AutoScaleMode.Dpi
+			Me.BackColor = Global.System.Drawing.Color.FromArgb(7, 11, 41)
+			MyBase.ClientSize = New Global.System.Drawing.Size(1047, 740)
+			MyBase.Controls.Add(Me.ProgressBar1)
+			MyBase.Controls.Add(Me.Mini)
+			MyBase.Controls.Add(Me.ExitForm)
+			MyBase.Controls.Add(Me.DataGridViewExtension)
+			MyBase.Controls.Add(Me.EncryptLogs)
+			MyBase.Controls.Add(Me.NumProg)
+			MyBase.Controls.Add(Me.KeyComboBox1)
+			MyBase.Controls.Add(Me.Guna2HtmlLabel1)
+			MyBase.Controls.Add(Me.GetDriversComboBox)
+			MyBase.Controls.Add(Me.FileEncrypError)
+			MyBase.Controls.Add(Me.Guna2ResizeBox1)
+			MyBase.Controls.Add(Me.DocumentPath)
+			MyBase.Controls.Add(Me.Label1)
+			MyBase.Controls.Add(Me.EnableTextDocument)
+			MyBase.Controls.Add(Me.Choose_Text)
+			MyBase.Controls.Add(Me.Label22)
+			MyBase.Controls.Add(Me.EnableBackground)
+			MyBase.Controls.Add(Me.StateFiles)
+			MyBase.Controls.Add(Me.NumList)
+			MyBase.Controls.Add(Me.TextBox1)
+			MyBase.Controls.Add(Me.label4)
+			MyBase.Controls.Add(Me.PictureBox_Background)
+			MyBase.Controls.Add(Me.Chose_Backgroundimage)
+			MyBase.Controls.Add(Me.Encryptionkey)
+			MyBase.Controls.Add(Me.Decrypt)
+			MyBase.Controls.Add(Me.State)
+			MyBase.Controls.Add(Me.Crypt)
+			MyBase.Controls.Add(Me.NameForm)
+			MyBase.Controls.Add(Me.ClientInfo)
+			Me.ForeColor = Global.System.Drawing.Color.White
+			MyBase.FormBorderStyle = Global.System.Windows.Forms.FormBorderStyle.None
+			MyBase.Icon = CType(componentResourceManager.GetObject("$this.Icon"), Global.System.Drawing.Icon)
+			MyBase.Name = "FormRansomware"
+			MyBase.StartPosition = Global.System.Windows.Forms.FormStartPosition.Manual
+			Me.Text = "Ransomware"
+			MyBase.TopMost = True
+			CType(Me.EncryptLogs, Global.System.ComponentModel.ISupportInitialize).EndInit()
+			CType(Me.PictureBox_Background, Global.System.ComponentModel.ISupportInitialize).EndInit()
+			CType(Me.DataGridViewExtension, Global.System.ComponentModel.ISupportInitialize).EndInit()
+			MyBase.ResumeLayout(False)
+			MyBase.PerformLayout()
+		End Sub
+
+		' Token: 0x04000326 RID: 806
+		Private components As Global.System.ComponentModel.IContainer
+	End Class
+End Namespace
